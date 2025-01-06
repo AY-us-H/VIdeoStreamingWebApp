@@ -4,6 +4,7 @@ import { Paper, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { motion } from 'framer-motion';
 import styles from './index'
+
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
@@ -20,12 +21,12 @@ const SearchBar = () => {
 
   return (
     <motion.div
-  whileHover={{ scale: 1.06 }}
-  whileTap={{
-    scale: 0.8,
-    borderRadius: "100%"
-  }}
-><Paper
+      whileHover={{ scale: 1.06 }}
+      whileTap={{
+        scale: 0.8,
+        borderRadius: "100%"
+      }}
+    ><Paper
       component='form'
       onSubmit={onhandleSubmit}
       sx={{
@@ -36,17 +37,17 @@ const SearchBar = () => {
         mr: { sm: 5 },
       }}
     >
-      <input
-        className='search-bar'
-        placeholder='Search...'
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-      <IconButton type='submit' sx={{ p: '10px', color: 'blue' }} aria-label='search'>
-        <SearchIcon />
-      </IconButton>
-    </Paper></motion.div>
-    
+        <input
+          className='search-bar'
+          placeholder='Search...'
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <IconButton type='submit' sx={{ p: '10px', color: 'blue' }} aria-label='search'>
+          <SearchIcon />
+        </IconButton>
+      </Paper></motion.div>
+
   );
 };
 

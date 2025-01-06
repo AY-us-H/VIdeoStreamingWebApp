@@ -14,6 +14,7 @@ import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
 export const logo = 'https://www.canva.com/design/DAFgprymxf0/0jdK_7F8_aXEW73GtPbsmA/watch?utm_content=DAFgprymxf0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink';
 
+// array of categories 
 export const categories = [
   { name: 'New', icon: <HomeIcon />, },
   { name: 'JS Mastery', icon: <CodeIcon />, },
